@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "grunt-cli": "^1.4.3"
+  },
+  "name": "2022_1_capstone",
+  "version": "1.0.0",
+  "description": "capstone web kiosk",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
