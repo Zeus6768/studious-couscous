@@ -4,18 +4,13 @@
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
-}
-
-div {
-  margin: 0;
+  margin-top: 40px;
 }
 
 .title {
   font-weight: 700;
   font-size: 24px;
 }
-
 
 /* main.html */
 .start_btn {
@@ -40,26 +35,61 @@ div {
   margin: 0;
 }
 
+.instruction_container {
+  display: inline-block;
+  margin-top: 20px;
+}
+
 /* storage_1.html */
 .instruction_cells {
   position: relative;
+  width: 216px;
+  height: 337px;
+  background-image: url(cells.png);
+  margin-top: 20px;
 }
 
 .instruction_cells button {
   position: absolute;
   background: none;
-  border: red 1px dotted;
+  margin: 0;
+  border: none;
+}
+
+.instruction_cells button:hover {
+  opacity: 0.1;
+  background-color: white;
+  border: 3px solid black;
 }
 
 #s1 {
   width: 108px;
   height: 93px;
+  left: 0;
 }
 
 #s2 {
   width: 107px;
   height: 93px;
-  left: 200px;
+  left: 109px;
+}
+
+#m1 {
+  top: 94px;
+  width: 216px;
+  height: 99px;
+  left: 0;
+}
+
+#l1 {
+  top: 194px;
+  width: 216px;
+  height: 143px;
+  left: 0;
+}
+
+.btn_page {
+  display: inline-block;
 }
 
 /* storage_2.html */
