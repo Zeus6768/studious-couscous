@@ -16,26 +16,30 @@ app.get('/', (req, res) => {
 	printRequest(req)
 	res.render('main.html');
 });
-  
-app.get('/storage_1', (_, res) => {
+
+app.get('/storage_1', (req, res) => {
+	printRequest(req)
 	res.render('storage_1.html');
 });
 
-app.get('/storage_2', (_, res) => {
+app.get('/storage_2', (req, res) => {
+	printRequest(req)
 	res.render('storage_2.html');
 });
 
-app.get('/find_1', (_, res) => {
+app.get('/find_1', (req, res) => {
+	printRequest(req)
 	res.render('find_1.html')
 })
 
-app.get('/find_2', (_, res) => {
+app.get('/find_2', (req, res) => {
+	printRequest(req)
 	res.render('find_2.html')
 })
 
 function printRequest(req) {
 	console.log(
-		'From', req.ip.substring(7),
+		req.ip.substring(7),
 		'HTTP', req.httpVersion,
 		req.method,
 		`${req.url}`,
