@@ -4,12 +4,17 @@
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 40px;
+  margin: 20px 0;
 }
 
 .title {
   font-weight: 700;
   font-size: 24px;
+  margin: 40px 0 20px 0;
+}
+
+.checkbox {
+  margin: 0;
 }
 
 .button_container {
@@ -35,6 +40,7 @@
 }
 
 /* main.html */
+
 .start_btn {
   display: flex;
   align-items: center;
@@ -43,6 +49,7 @@
   padding: 15px;
   border-radius: 5px;
   cursor: pointer;
+  margin: 40px 60px;
 }
 
 .start_btn img {
@@ -111,10 +118,39 @@
 }
 
 /* storage_2.html */
+.personal_info_agreement {
+  margin: 20px;
+  padding: 10px;
+  border: 2px solid;
+}
 
+.personal_info_check {
+  margin: 0;
+}
+
+.input_container form {
+  margin-top: 40px
+}
+
+.input_text {
+  margin: 0 0 40px 0;
+  width: 200px;
+  height: 20px;
+}
+
+.input_p {
+  margin: 10px 0;
+  font-weight: bold;
+}
 
 /* storage_3.html */
-
+.button_main button {
+  width: 100px;
+  height: 50px;
+  background-color: #302A78;
+  color: white;
+  border: none;
+}
 
 /* find_1.html */
 

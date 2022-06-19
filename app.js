@@ -27,6 +27,11 @@ app.get('/storage_2', (req, res) => {
 	res.render('storage_2.html');
 });
 
+app.get('/storage_3', (req, res) => {
+	printRequest(req)
+	res.render('storage_3.html');
+});
+
 app.get('/find_1', (req, res) => {
 	printRequest(req)
 	res.render('find_1.html')
