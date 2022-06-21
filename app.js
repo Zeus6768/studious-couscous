@@ -13,34 +13,34 @@ app.listen(port, () => {
 });
 
 app.get('/', (req, res) => {
-	printRequest(req)
+	printRequest(req);
 	res.render('main.html');
 });
 
 app.get('/storage_1', (req, res) => {
-	printRequest(req)
+	printRequest(req);
 	res.render('storage_1.html');
 });
 
 app.get('/storage_2', (req, res) => {
-	printRequest(req)
+	printRequest(req);
 	res.render('storage_2.html');
 });
 
 app.get('/storage_3', (req, res) => {
-	printRequest(req)
+	printRequest(req);
 	res.render('storage_3.html');
 });
 
 app.get('/find_1', (req, res) => {
-	printRequest(req)
-	res.render('find_1.html')
-})
+	printRequest(req);
+	res.render('find_1.html');
+});
 
 app.get('/find_2', (req, res) => {
-	printRequest(req)
-	res.render('find_2.html')
-})
+	printRequest(req);
+	res.render('find_2.html');
+});
 
 function printRequest(req) {
 	console.log(
@@ -48,5 +48,5 @@ function printRequest(req) {
 		'HTTP', req.httpVersion,
 		req.method,
 		`${req.url}`,
-	)
+	);
 }

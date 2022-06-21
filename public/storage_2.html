@@ -14,17 +14,17 @@
 				<p>[개인정보 수집·이용 동의]</p>
 			</div>
 			<div class="personal_info_agreement_detail">
-				□ 개인정보의 수집 및 이용에 관한 사항
-				- 수집하는 개인정보 항목 (이력서 양식 내용 일체) : 전화번호
+				개인정보의 수집 및 이용에 관한 사항<br>
+				- 수집하는 개인정보 항목 (이력서 양식 내용 일체) : 전화번호<br>
 				- 개인정보의 이용 목적 : 수집된 개인정보를 서비 이용에 활용하며, 목적 외의 용도로는 사용하지 않습니다. 
 				<br><br>
-				□ 개인정보의 보관 및 이용 기간
-				- 귀하의 개인정보를 다음과 같이 보관하며, 수집, 이용 및 제공목적이 달성된 경우 
+				개인정보의 보관 및 이용 기간<br>
+				- 귀하의 개인정보를 다음과 같이 보관하며, 수집, 이용 및 제공목적이 달성된 경우 <br>
 				[개인정보 보호법] 제21조에 따라 처리합니다. 
 			</div>
 		</div>
 		<div class="personal_info_check">
-			<span>개인정보 수집 및 이용에 동의합니다. </span>
+			<span onclick="check()">개인정보 수집 및 이용에 동의합니다. </span>
 			<input class="checkbox" type="checkbox" name="agree">
 		</div>
 		<div class="input_container">
@@ -46,15 +46,4 @@
 	</div>
 </body>
 </html>
-
-<script>
-	function validateUserData(phone, pw) {
-		const msg = '유효하지 않는 전화번호입니다.';    
-		if (/^[0-9]{2,3}-[0-9]{3,4}-[0-9]{4}/.test(args)) {
-			return true;
-		} else {
-			alert(msg);
-			return false;
-		}
-	}
-</script>
+<script src="main.js"></script>
