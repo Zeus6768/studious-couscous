@@ -30,15 +30,15 @@
 		<div class="input_container">
 			<form action="" method="post" name="userinput">
 				<p class="input_p phone_number">전화번호</p>
-				<input class="input_text" type="text" name="phoneNumber" placeholder="예) 01012345678">
-				<p class="input_p password">찾기 비밀번호</p>
-				<input class="input_text" type="password" name="password" placeholder="4자리 숫자">
+				<input id="phone" class="input_text" type="text" name="phoneNumber" placeholder="예) 01012345678">
+				<p class="input_p password">찾기 비밀번호(4자리 숫자)</p>
+				<input id="password" class="input_text" type="password" name="password" placeholder="4자리 숫자">
 			</form>
 			<div class="button_container">
 				<div class="button_previous btn_page" onclick="javascript:history.back()">
 					<span class="btn_prev">이전</span>
 				</div>
-				<div class="button_next btn_page" onclick="javascript:location.href='storage_3'">
+				<div class="button_next btn_page" onclick="nextButton2('storage_3')">
 					<span class="btn_next">다음</span>
 				</div>
 			</div>

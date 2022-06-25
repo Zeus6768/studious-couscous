@@ -1,5 +1,7 @@
+// storage_1
+const selected = document.getElementById('selected_cell');
+
 function selectBtn(e) {
-	const selected = document.getElementById('selected_cell');
 	if (e.value === '1') {
 		selected.innerHTML = "S1";
 	} else if (e.value === '2') {
@@ -11,11 +13,31 @@ function selectBtn(e) {
 	}
 }
 
+function nextButton1() {
+	if (selected.innerHTML) {
+		document.location.href = 'storage_2';
+	} else {
+		alert('택배함을 선택해주세요.');
+	}
+}
+
+// storage_2, find_1
+const checkbox = document.querySelector('.checkbox');
+
 function check() {
-	const checkbox = document.querySelector('.checkbox');
 	if (checkbox.checked) {
 		checkbox.checked = false;
 	} else {
 		checkbox.checked = true;
+	}
+}
+
+function nextButton2(URI) {
+	const phone = document.getElementById('phone').value;
+	const password = document.getElementById('password').value;
+	if (checkbox.checked && /^[0-9]{9,11}/.test(phone) && /^[0-9]{4}/.test(password)) {
+		document.location.href = URI;
+	} else {
+		alert('올바르지 않은 형식입니다.');
 	}
 }
